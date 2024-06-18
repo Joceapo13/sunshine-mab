@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCEA95;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4D3F00;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 0 1 calc(25% - 20px); /* 4 columnas con espacio entre fotos */
+}
+
+.foto img {
+    width: 100%;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.pie {
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden; /* Por defecto, oculta el pie de las fotos */
+    transition: visibility 0s ease 0.3s;
+}
+
+.galeria:hover .pie {
+    visibility: visible; /* Hace visible el pie al hacer hover sobre la galería */
+    transition-delay: 0s;
+}
+
+.pie p {
+    margin: 0;
+    font-size: 18px;
+    color: #4D3F00;
+}

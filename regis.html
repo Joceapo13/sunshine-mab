@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #3498db;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+
+    </style>
+</head>
+<style>
+    /* Definir la animación */
+    @keyframes cambioColor {
+        0% { background-color: #ec6060; } /* Rojo */
+        50% { background-color: #f1ff6e; } /* Verde */
+        100% { background-color: #4cd8ff; } /* Azul */
+    }
+    
+    /* Aplicar la animación al cuerpo de la página */
+    body {
+        animation: cambioColor 3s ease infinite alternate; /* Nombre de la animación, duración, timing function, dirección y número de repeticiones */
+    }
+    
+    </style>
+    <script>  function enviarFormulario() {
+        // Aquí puedes agregar cualquier lógica adicional para validar el formulario antes de enviarlo
+        
+        // Redirigir al usuario a la página principal
+        window.location.href = "papri.html";
+      }</script>
+
+<body>
+        
+          
+      </form>
+     <center> <div class="container">
+        <p>DEFINE TU PALETA DE COLORES!!</p>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+      </div>
+    
+    
+      <script>
+        function cambiarColor(event) {
+          const colores = ["#FF5733", "#33FF57", "#5733FF", "#FF3357", "#33FFC1", "#336CFF"];
+          const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+          event.target.style.backgroundColor = colorAleatorio;
+        }
+    
+    
+        document.querySelectorAll('.box').forEach(box => {
+          box.addEventListener('click', cambiarColor);
+        });
+     
+      </script> 
+        </center>
+    
+      <form action="papri.html" method="post" onsubmit="enviarFormulario()">
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+          
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña" required><br>
+          
+            <label for="confirmar_contraseña">Confirmar contraseña:</label><br>
+            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required><br><br>
+          
+        <form action="papri.html">
+        <label for="cars">Calificanos</label>
+            <select id="cars" name="cars">
+              <option value="Muy bueno">Muy bueno</option>
+              <option value="Bueno">Bueno</option>
+              <option value="Mal">Mal</option>
+              <option value="Terrible">Terrible</option>
+            </select>
+            <br><br>
+               <h1><input type="submit" value="ENVIAR!!"></h1>
+               <br><br><br><br><br>
+          </form>
+</body>
+</html>

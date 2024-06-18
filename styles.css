@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #f8f187c4;
+    color: #070707b6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #070707b6;
+    text-decoration: none;
+}
+
+section.productos {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f8f187c4;
+    color: #070707b6;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para los íconos de FontAwesome */
+.navbar ul li a i {
+    margin-right: 5px; /* Añade un pequeño margen entre el ícono y el texto */
+    font-size: 18px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
+}
+

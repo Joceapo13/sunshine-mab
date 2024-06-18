@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SUNSHINE MAB</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="papri.html"><i class="fas fa-home"></i>Inicio</a></li>
+                <li><a href="regis.html"><i class="fas fa-info-circle"></i>Registrate</a></li>
+                <li><a href="prod.html"><i class="fas fa-envelope"></i>Productos</a></li>
+                <li><a href="ubi.html"><i class="fas fa-info-circle"></i>Ubicacion</a></li>
+                <li><a href="Qs.html"><i class="fas fa-user"></i>Quienes somos</a></li>
+                <a href="https://www.instagram.com/sunshine_23mab/" target="frmCuerpo"> Siguenos en Instagram|</a>
+            </ul>
+            <marquee behavior="scroll" direction="left">
+                ¡Bienvenid@!
+            </marquee>
+        </nav>
+    </body>
+    </header>
+    
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+            <img src="p.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <a href="hiper.html" target="frmCuerpo"><button>Ver Detalles</button></a>
+        </div>
+        <div class="producto">
+            <img src="pp.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <a href="hiper1.html" target="frmCuerpo"><button>Ver Detalles</button></a>
+        </div>
+        <div class="producto">
+            <img src="p6.jpg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <a href="hiper2.html" target="frmCuerpo"><button>Ver Detalles</button></a>
+        </div>
+    
+    <footer>
+
+        <p>&copy; 2024 sunshine_23mab <br>Apodaca herrera Claudia Jocelyn</p>
+        <p align="right" id="fecha"></p>
+            
+        <!-- Aquí incluirías otros elementos de tu página -->
+        
+        <!-- JavaScript para mostrar la fecha -->
+        <script>
+            // Obtener el elemento donde se mostrará la fecha
+            var fechaElemento = document.getElementById('fecha');
+        
+            // Crear un objeto de fecha
+            var fechaActual = new Date();
+        
+            // Formatear la fecha como dd/mm/aaaa
+            var opcionesFecha = { day: 'numeric', month: 'numeric', year: 'numeric' };
+            var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+        
+            // Mostrar la fecha en el elemento HTML
+            fechaElemento.textContent = 'Hoy es: ' + fechaFormateada;
+        </script>
+    </footer>
+</body>
+</html>
